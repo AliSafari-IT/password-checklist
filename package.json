@@ -1,6 +1,6 @@
 {
   "name": "@asafarim/password-checklist",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A robust, fully-typed React component and headless hook to display the success or failure of password strength rules in real time.",
   "keywords": [
     "react",
@@ -57,5 +57,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "homepage": "https://alisafari-it.github.io/password-checklist/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AliSafari-IT/password-checklist.git"
   }
+  
 }
