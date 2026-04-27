@@ -1,0 +1,44 @@
+/*
+ * @asafarim/password-checklist — opinionated default theme.
+ * Imports the structural styles and adds a card-like wrapper.
+ */
+
+@import "./styles.css";
+
+.pc-checklist {
+  --pc-bg: #ffffff;
+  --pc-padding: 0.85rem 1rem;
+  --pc-gap: 0.45rem;
+  --pc-color-text: #212529;
+  --pc-color-muted: #868e96;
+  --pc-color-valid: #2f9e44;
+  --pc-color-invalid: #d6336c;
+  --pc-color-pending: #495057;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  font-size: 0.9rem;
+}
+
+.pc-item {
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.pc-item--valid {
+  text-decoration: line-through;
+  text-decoration-color: rgba(47, 158, 68, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  .pc-checklist {
+    --pc-bg: #1a1b1e;
+    --pc-color-text: #e9ecef;
+    --pc-color-muted: #adb5bd;
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  .pc-meter__bar {
+    background: rgba(255, 255, 255, 0.08);
+  }
+}

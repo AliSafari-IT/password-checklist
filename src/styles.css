@@ -1,0 +1,122 @@
+/*
+ * @asafarim/password-checklist — minimal structural styles.
+ * Import this file for the layout / spacing primitives only.
+ * For an opinionated look-and-feel, import `default.css` instead.
+ *
+ * All visual styling is done via CSS custom properties so consumers can
+ * theme the component without overriding selectors.
+ */
+
+.pc-checklist {
+  --pc-color-valid: #2f9e44;
+  --pc-color-invalid: #d6336c;
+  --pc-color-pending: #6c757d;
+  --pc-color-text: inherit;
+  --pc-color-muted: #6c757d;
+  --pc-bg: transparent;
+  --pc-radius: 6px;
+  --pc-gap: 0.4rem;
+  --pc-padding: 0;
+  --pc-meter-percent: 0%;
+
+  font-family: inherit;
+  color: var(--pc-color-text);
+  background: var(--pc-bg);
+  padding: var(--pc-padding);
+  border-radius: var(--pc-radius);
+}
+
+.pc-checklist--rtl {
+  direction: rtl;
+}
+
+.pc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pc-gap);
+}
+
+.pc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.3;
+}
+
+.pc-item__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.15rem;
+}
+
+.pc-item__label {
+  flex: 1 1 auto;
+}
+
+.pc-item--valid {
+  color: var(--pc-color-valid);
+}
+
+.pc-item--invalid {
+  color: var(--pc-color-invalid);
+}
+
+.pc-item--pending {
+  color: var(--pc-color-pending);
+}
+
+/* Strength meter */
+.pc-meter {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.pc-meter__bar {
+  position: relative;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.pc-meter__fill {
+  height: 100%;
+  width: var(--pc-meter-percent);
+  border-radius: inherit;
+  transition: width 240ms ease, background-color 240ms ease;
+}
+
+.pc-meter__fill--score-0 { background: #d6336c; }
+.pc-meter__fill--score-1 { background: #f08c00; }
+.pc-meter__fill--score-2 { background: #fab005; }
+.pc-meter__fill--score-3 { background: #74b816; }
+.pc-meter__fill--score-4 { background: #2f9e44; }
+
+.pc-meter__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  color: var(--pc-color-muted);
+}
+
+/* Visually hidden text for screen readers */
+.pc-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
