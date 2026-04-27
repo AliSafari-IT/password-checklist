@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 // Bring in the library's default theme. Swap to `styles.css` for unstyled.
 import "@asafarim/password-checklist/default.css";
-import { BuyMeCoffeeWidget } from "../components/BuyMeCoffeeWidget";
 
 export const metadata: Metadata = {
   title: "@asafarim/password-checklist — demo",
@@ -184,7 +184,19 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
-        <BuyMeCoffeeWidget />
+        <Script
+          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+          data-name="BMC-Widget"
+          data-cfasync="false"
+          data-id="asafarim"
+          data-description="Support me on Buy me a coffee!"
+          data-message=""
+          data-color="#5F7FFF"
+          data-position="Right"
+          data-x_margin="18"
+          data-y_margin="18"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
