@@ -14,11 +14,35 @@ export const metadata: Metadata = {
 const Logo = () => (
   <div className="flex items-center gap-3">
     <span className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-brand-500 text-white shadow-lg shadow-brand-500/20">
-      <svg viewBox="0 0 64 64" className="h-9 w-9" fill="none" aria-hidden="true">
-        <rect x="12" y="22" width="40" height="28" rx="8" fill="currentColor" opacity="0.95" />
+      <svg
+        viewBox="0 0 64 64"
+        className="h-9 w-9"
+        fill="none"
+        aria-hidden="true"
+      >
+        <rect
+          x="12"
+          y="22"
+          width="40"
+          height="28"
+          rx="8"
+          fill="currentColor"
+          opacity="0.95"
+        />
         <path d="M20 26h24v14H20z" fill="white" opacity="0.9" />
-        <path d="M28 34l4 4 10-10" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M26 30v-6a6 6 0 0 1 12 0v6" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+        <path
+          d="M28 34l4 4 10-10"
+          stroke="currentColor"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M26 30v-6a6 6 0 0 1 12 0v6"
+          stroke="currentColor"
+          strokeWidth="4"
+          strokeLinecap="round"
+        />
       </svg>
     </span>
     <div>
@@ -127,8 +151,18 @@ export default function RootLayout({
                 <Link
                   href="https://github.com/AliSafari-IT/password-checklist"
                   className="rounded-full border border-slate-200 px-3 py-1 text-slate-700 transition hover:border-brand-500 hover:text-brand-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-brand-500"
+                  target="_blank"
                 >
                   GitHub
+                </Link>
+                <Link
+                  href={
+                    "https://www.npmjs.com/package/@asafarim/password-checklist"
+                  }
+                  target="_blank"
+                  className="rounded-full border border-slate-200 px-3 py-1 text-slate-700 transition hover:border-brand-500 hover:text-brand-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-brand-500"
+                >
+                  NPM package
                 </Link>
               </nav>
             </div>
@@ -173,7 +207,11 @@ export default function RootLayout({
           <footer className="mt-8 rounded-3xl border border-slate-200 bg-white/80 p-5 text-sm text-slate-600 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/70 dark:text-slate-400">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <p>
-                Built with <span className="font-semibold text-slate-900 dark:text-slate-100">@asafarim/password-checklist</span> and deployed to GitHub Pages.
+                Built with{" "}
+                <span className="font-semibold text-slate-900 dark:text-slate-100">
+                  @asafarim/password-checklist
+                </span>{" "}
+                and deployed to GitHub Pages.
               </p>
               <Link
                 href="https://github.com/AliSafari-IT/password-checklist"
