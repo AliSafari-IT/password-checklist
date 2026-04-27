@@ -25,6 +25,8 @@ jobs:
 
       - run: pnpm install
 
+      - run: cd demo && pnpm install
+
       - run: cd demo && pnpm build
 
       - uses: peaceiris/actions-gh-pages@v4
