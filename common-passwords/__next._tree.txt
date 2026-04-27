@@ -1,2 +1,2 @@
 :HL["/password-checklist/_next/static/chunks/09aqpfzt9j7v5.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"common-passwords","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"sOqdnmTcGBRXkX4Qe2A0V"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"common-passwords","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"1Gwb2yreYYUJ2hrxj0g8Y"}
