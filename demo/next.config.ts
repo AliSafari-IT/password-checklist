@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
-const repo = process.env.GITHUB_REPOSITORY;
-const basePath = process.env.GITHUB_ACTIONS && repo ? `/${repo.split("/")[1]}` : "";
+// For GitHub Pages deployment, always use the fixed basePath
+const basePath = "/password-checklist";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   // its TS source while developing without rebuilding on every change.
   transpilePackages: ["@asafarim/password-checklist"],
   basePath,
-  assetPrefix: basePath || undefined,
+  assetPrefix: basePath,
   output: "export",
 };
 
