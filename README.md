@@ -5,7 +5,19 @@ success or failure of password strength rules in real time as the user
 types.
 
 Inspired by [`react-password-checklist`](https://github.com/sators/react-password-checklist),
-but with:
+this package provides a typed, themeable checklist for modern React forms.
+
+## Live demo
+
+Explore the interactive demo, including the vertical feature showcase, roadmap, and usage guide:
+
+**[Open the live demo](https://alisafari-it.github.io/password-checklist/)**
+
+![Password checklist validation demo](demo/public/password-validation.png)
+
+The demo includes built-in rules, custom validators, async breach checks, strength scoring, localization, RTL support, a headless hook, and signup form integration.
+
+## Why password-checklist?
 
 - **More built-in rules**: repeat detection, sequential detection, common-password blacklist, no-whitespace, personal-info match, plus all the originals.
 - **Strength meter** with a 0–4 score and entropy estimate.
