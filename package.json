@@ -1,6 +1,6 @@
 {
   "name": "@asafarim/password-checklist",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A robust, fully-typed React component and headless hook to display the success or failure of password strength rules in real time.",
   "keywords": [
     "react",
@@ -40,7 +40,8 @@
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "clean": "rimraf dist",
-    "demo": "cd demo && pnpm dev"
+    "predemo": "pnpm build && cd demo && pnpm install",
+    "demo": "pnpm --filter password-checklist-demo dev"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

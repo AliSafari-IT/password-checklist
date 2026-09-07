@@ -32,9 +32,15 @@ importers:
 
   demo:
     dependencies:
+      '@asafarim/display-code':
+        specifier: ^1.2.2
+        version: 1.2.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@asafarim/password-checklist':
         specifier: workspace:*
         version: link:..
+      '@asafarim/shared':
+        specifier: ^1.7.3
+        version: 1.7.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       next:
         specifier: ^16.2.4
         version: 16.2.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -75,6 +81,18 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@asafarim/display-code@1.2.2':
+    resolution: {integrity: sha512-1h/T+T219iyOCuVDOZz/CJ2no9sx0QbabAgm09MePy7wSdXjcq4iNocMnpEtsC/vddHpWJ3VhygvLM8eg8uMVA==}
+    peerDependencies:
+      react: ^17.0.0 || ^18.0.0
+      react-dom: ^17.0.0 || ^18.0.0
+
+  '@asafarim/shared@1.7.4':
+    resolution: {integrity: sha512-otDCgioZJTF3hB59UU1EWQlN1umk7fi+ykKgv8892UbIMvRxUDpaalSeKzkbWholZfLejUDIGoiEc/t3O2aPFQ==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   '@emnapi/runtime@1.10.0':
     resolution: {integrity: sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA==}
@@ -1177,6 +1195,16 @@ packages:
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
+
+  '@asafarim/display-code@1.2.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
+
+  '@asafarim/shared@1.7.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
 
   '@emnapi/runtime@1.10.0':
     dependencies:

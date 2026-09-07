@@ -1,13 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { PasswordChecklist } from "@asafarim/password-checklist";
 import { ExamplePage } from "../../components/ExamplePage";
-import { PasswordField } from "../../components/PasswordField";
+import { BasicRulesDemo } from "../../components/BasicRulesDemo";
 
 export default function BasicPage() {
-  const [password, setPassword] = useState("");
-
   return (
     <ExamplePage
       title="Basic rules"
@@ -18,17 +14,7 @@ export default function BasicPage() {
   minLength={8}
 />`}
     >
-      <PasswordField
-        label="Password"
-        value={password}
-        onChange={setPassword}
-        placeholder="Enter a password..."
-      />
-      <PasswordChecklist
-        value={password}
-        rules={["minLength", "capital", "lowercase", "number", "specialChar"]}
-        minLength={8}
-      />
+      <BasicRulesDemo />
     </ExamplePage>
   );
 }
