@@ -16,7 +16,7 @@
     "@asafarim/display-code": "^1.2.2",
     "@asafarim/password-checklist": "workspace:*",
     "@asafarim/shared": "^1.7.3",
-    "next": "^16.2.4",
+    "next": "^16.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
